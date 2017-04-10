@@ -33,6 +33,9 @@ $(call inherit-product, device/oneplus/extras/common.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Default vendor configuration.
+ENABLE_VENDOR_IMAGE := false
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -276,6 +279,9 @@ PRODUCT_COPY_FILES += \
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
 $(call inherit-product, build/target/product/verity.mk)
+ifeq ($(ENABLE_VENDOR_IMAGE), true)
+PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/bootdevice/by-name/vendor
+endif
 
 # VR
 PRODUCT_PACKAGES += \
