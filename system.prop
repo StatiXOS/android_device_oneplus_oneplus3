@@ -43,6 +43,7 @@ ro.vendor.qti.sys.fw.bg_apps_limit=60
 # Camera
 Camera.no_navigation_bar=true
 vidc.enc.dcvs.extra-buff-count=2
+vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner
 vendor.vidc.enc.disable.pq=true
 persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
