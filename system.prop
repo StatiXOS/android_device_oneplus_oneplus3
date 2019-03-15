@@ -181,10 +181,6 @@ persist.data.iwlan.enable=true
 # Time services
 persist.timed.enable=true
 
-# Touchscreen
-persist.vendor.qti.inputopts.enable=true
-persist.vendor.qti.inputopts.movetouchslop=0.6
-
 # Voltage          
 ro.cutoff_voltage_mv=3250
 
