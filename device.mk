@@ -88,10 +88,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=rome
 
-# Camera
-PRODUCT_PACKAGES += \
-    libcamera_shim
-
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
