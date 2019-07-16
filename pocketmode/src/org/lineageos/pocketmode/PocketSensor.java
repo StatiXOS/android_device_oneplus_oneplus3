@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.pocketmode;
+package org.statix.pocketmode;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -27,7 +27,7 @@ import android.util.Log;
 
 import java.util.List;
 
-import org.lineageos.internal.util.FileUtils;
+import org.statix.internal.util.FileUtils;
 
 public class PocketSensor implements SensorEventListener {
 
